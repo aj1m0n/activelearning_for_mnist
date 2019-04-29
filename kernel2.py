@@ -180,7 +180,8 @@ def margins(predict_score,x_train,y_train,real_x_test,real_y_test,batch_size,num
 
 
 # In[6]:
-    import threading 
+import threading
+if __name__ == "__main__": 
     from argparse import ArgumentParser
     parser = ArgumentParser()
     parser.add_argument("--batch_size", default = 20, type = int)
