@@ -183,11 +183,14 @@ def margins(predict_score,x_train,y_train,real_x_test,real_y_test,batch_size,num
 
 
 import threading
-if __name__ == "__main__":
+    from argparse import ArgumentParser
+    parsr = ArgumentParser()
+    parser.add_argument("--batch_size", default = 20, type = int)
+    args = parser.parse_args()
         # input image dimensions
     img_rows, img_cols = 28, 28
 
-    batch_size = 128 * 20
+    batch_size = 128 * args.batch_size
     num_classes = 10
     epochs = 12
 
