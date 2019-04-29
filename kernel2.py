@@ -182,7 +182,7 @@ def margins(predict_score,x_train,y_train,real_x_test,real_y_test,batch_size,num
 # In[6]:
     import threading 
     from argparse import ArgumentParser
-    parsr = ArgumentParser()
+    parser = ArgumentParser()
     parser.add_argument("--batch_size", default = 20, type = int)
     args = parser.parse_args()
         # input image dimensions
